@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; }
+
+header { background: #000; color: #fff; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
+.logo { font-size: 1.8rem; font-weight: 700; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav a { color: #fff; text-decoration: none; font-weight: 500; }
+
+.hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1600'); background-size: cover; height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+.btn { background: #e91e63; color: #fff; padding: 1rem 2rem; text-decoration: none; border-radius: 50px; font-weight: 600; }
+
+.products { padding: 4rem 2rem; max-width: 1200px; margin: auto; text-align: center; }
+.products h2 { margin-bottom: 3rem; font-size: 2.5rem; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.product-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.product-card:hover { transform: translateY(-10px); }
+.product-card img { width: 100%; height: 300px; object-fit: cover; }
+.product-card h3 { padding: 1rem; font-size: 1.3rem; }
+.price { font-size: 1.4rem; font-weight: 700; color: #e91e63; }
+.add-to-cart { background: #000; color: #fff; border: none; padding: 0.8rem 1.5rem; margin: 1rem; cursor: pointer; border-radius: 50px; font-weight: 600; }
+
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
+.modal-content { background: #fff; margin: 10% auto; padding: 2rem; width: 80%; max-width: 600px; border-radius: 12px; position: relative; }
+.close { position: absolute; right: 1.5rem; top: 1rem; font-size: 2rem; cursor: pointer; }
+
+footer { background: #000; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem; }
+.footer-links a { color: #e91e63; text-decoration: none; margin: 0 1rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul { flex-direction: column; gap: 1rem; }
+  .hero h1 { font-size: 2.5rem; }
+}
