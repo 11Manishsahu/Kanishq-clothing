@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Kanishq Clothing - Premium Fashion from Indore | T-Shirts, Jeans, Hoodies, Jackets aur bohot kuch. Friends ke liye special deals!"/>
-  <title>Kanishq Clothing • Indore's Premium Fashion</title>
+  <meta name="description" content="Kanishq Clothing - Premium Fashion from Indore | Stylish clothes for everyone."/>
+  <title>Kanishq Clothing • Premium Fashion</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <style>
@@ -13,111 +13,86 @@
     .logo-font { font-family: 'Playfair Display', serif; }
     .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
     .product-card:hover { transform: translateY(-12px) scale(1.03); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4); }
-    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=2000'); }
+    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
   <!-- Top Banner -->
-  <div class="bg-rose-600 py-2 text-center text-sm font-medium">
-    🚚 Free Shipping on orders above ₹999 | Indore se Direct
+  <div class="bg-emerald-600 py-3 text-center text-sm md:text-base font-medium">
+    Free Shipping on orders above ₹999 | Direct from Indore
   </div>
 
   <!-- Navbar -->
-  <nav class="sticky top-0 z-50 bg-zinc-900 border-b border-zinc-800">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+  <nav class="sticky top-0 z-50 bg-zinc-900/90 backdrop-blur-md border-b border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-9 h-9 bg-rose-600 rounded-full flex items-center justify-center text-xl font-bold">K</div>
-        <h1 class="logo-font text-3xl tracking-tight">Kanishq</h1>
+        <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-2xl font-bold">K</div>
+        <h1 class="logo-font text-3xl md:text-4xl tracking-tight">Kanishq</h1>
       </div>
       
-      <div class="hidden md:flex items-center gap-8 text-lg">
-        <a href="#shop" class="hover:text-rose-500 transition">Shop</a>
-        <a href="#categories" class="hover:text-rose-500 transition">Categories</a>
-        <a href="#contact" class="hover:text-rose-500 transition">Contact</a>
+      <div class="hidden md:flex items-center gap-10 text-lg">
+        <a href="#shop" class="hover:text-emerald-400 transition">Shop</a>
+        <a href="#categories" class="hover:text-emerald-400 transition">Categories</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
       </div>
 
-      <div class="flex items-center gap-6">
-        <div class="relative">
-          <input id="search" type="text" placeholder="Search products..." 
-                 class="bg-zinc-800 border border-zinc-700 rounded-full pl-10 py-3 w-72 focus:outline-none focus:border-rose-500 text-sm">
-          <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-zinc-400"></i>
+      <div class="flex items-center gap-4 sm:gap-6">
+        <div class="relative hidden sm:block">
+          <input id="search" type="text" placeholder="Search..." 
+                 class="bg-zinc-800 border border-zinc-700 rounded-full pl-10 py-3 w-48 sm:w-64 focus:outline-none focus:border-emerald-500 text-sm">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400"></i>
         </div>
-        <button id="cart-btn" class="relative flex items-center gap-2 hover:text-rose-500 transition">
+        <button id="cart-btn" class="relative flex items-center gap-2 hover:text-emerald-400 transition">
           <i class="fa-solid fa-bag-shopping text-2xl"></i>
-          <span id="cart-count" class="absolute -top-2 -right-2 bg-rose-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
+          <span id="cart-count" class="absolute -top-2 -right-2 bg-emerald-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
         </button>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg h-screen flex items-center justify-center text-center">
-    <div class="max-w-3xl px-6">
-      <p class="text-rose-400 text-lg tracking-widest mb-4">INDORE'S FAVOURITE FASHION BRAND</p>
-      <h2 class="text-7xl font-bold leading-none logo-font mb-6">Wear the Style,<br>Feel the Vibe</h2>
-      <p class="text-xl text-zinc-300 mb-10">Premium clothing at crazy affordable prices. Made for you.</p>
-      <a href="#shop" class="inline-block bg-white text-black px-12 py-5 rounded-full font-semibold text-lg hover:bg-rose-600 hover:text-white transition">Shop Now</a>
+  <section class="hero-bg h-[70vh] sm:h-screen flex items-center justify-center text-center px-4">
+    <div class="max-w-4xl">
+      <p class="text-emerald-400 text-base sm:text-lg tracking-widest mb-4 uppercase">Indore's Premium Fashion</p>
+      <h2 class="text-5xl sm:text-7xl font-bold leading-tight logo-font mb-6">Style That Speaks</h2>
+      <p class="text-lg sm:text-xl text-zinc-300 mb-8 sm:mb-10">Affordable premium clothing crafted for you.</p>
+      <a href="#shop" class="inline-block bg-emerald-600 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full font-semibold text-base sm:text-lg hover:bg-emerald-700 transition">Shop Now</a>
     </div>
   </section>
 
   <!-- Categories -->
-  <section id="categories" class="py-20 bg-zinc-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-12">Shop by Category</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <button onclick="filterCategory('all')" class="cat-btn active bg-zinc-800 hover:bg-rose-600 py-8 rounded-3xl text-2xl font-medium">All</button>
-        <button onclick="filterCategory('men')" class="cat-btn bg-zinc-800 hover:bg-rose-600 py-8 rounded-3xl text-2xl font-medium">Men</button>
-        <button onclick="filterCategory('women')" class="cat-btn bg-zinc-800 hover:bg-rose-600 py-8 rounded-3xl text-2xl font-medium">Women</button>
-        <button onclick="filterCategory('hoodie')" class="cat-btn bg-zinc-800 hover:bg-rose-600 py-8 rounded-3xl text-2xl font-medium">Hoodies</button>
+  <section id="categories" class="py-16 sm:py-20 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold text-center mb-10 sm:mb-12">Shop by Category</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+        <button onclick="filterCategory('all')" class="cat-btn active bg-zinc-800 hover:bg-emerald-600 py-6 sm:py-8 rounded-2xl sm:rounded-3xl text-xl sm:text-2xl font-medium transition">All</button>
+        <button onclick="filterCategory('men')" class="cat-btn bg-zinc-800 hover:bg-emerald-600 py-6 sm:py-8 rounded-2xl sm:rounded-3xl text-xl sm:text-2xl font-medium transition">Men</button>
+        <button onclick="filterCategory('women')" class="cat-btn bg-zinc-800 hover:bg-emerald-600 py-6 sm:py-8 rounded-2xl sm:rounded-3xl text-xl sm:text-2xl font-medium transition">Women</button>
+        <button onclick="filterCategory('hoodie')" class="cat-btn bg-zinc-800 hover:bg-emerald-600 py-6 sm:py-8 rounded-2xl sm:rounded-3xl text-xl sm:text-2xl font-medium transition">Hoodies</button>
       </div>
     </div>
   </section>
 
   <!-- Products -->
-  <section id="shop" class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">Our Latest Collection</h2>
-      <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"></div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="py-20 bg-zinc-900">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-12">What Friends Say</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-800 p-8 rounded-3xl">
-          <p class="italic">"Best quality hoodies ever! Indore mein sabse sasta aur stylish."</p>
-          <p class="mt-6 font-medium">- Rohan, Indore</p>
-        </div>
-        <div class="bg-zinc-800 p-8 rounded-3xl">
-          <p class="italic">"Jeans bilkul perfect fit. Friends ne poocha kahan se liya!"</p>
-          <p class="mt-6 font-medium">- Priya Sharma</p>
-        </div>
-        <div class="bg-zinc-800 p-8 rounded-3xl">
-          <p class="italic">"Crop top pehen ke sab impress ho gaye. Must buy!"</p>
-          <p class="mt-6 font-medium">- Neha, Bhopal</p>
-        </div>
-      </div>
+  <section id="shop" class="py-16 sm:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold text-center mb-12 sm:mb-16">Our Collection</h2>
+      <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8"></div>
     </div>
   </section>
 
   <!-- Contact Us -->
-  <section id="contact" class="py-20 bg-black">
-    <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-4">Get in Touch</h2>
-      <p class="text-center text-zinc-400 mb-12">Koi doubt ho to message kar do – 1 ghante mein reply!</p>
+  <section id="contact" class="py-16 sm:py-20 bg-black">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold text-center mb-4">Get in Touch</h2>
+      <p class="text-center text-zinc-400 mb-8 sm:mb-12 text-sm sm:text-base">Any questions? Drop a message – quick reply!</p>
       
-      <form id="contact-form" class="space-y-6">
-        <input type="text" id="name" placeholder="Your Name" required
-               class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-rose-500">
-        <input type="email" id="email" placeholder="Email or WhatsApp" required
-               class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-rose-500">
-        <textarea id="message" rows="5" placeholder="Message..." required
-                  class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-5 focus:outline-none focus:border-rose-500"></textarea>
-        <button type="submit"
-                class="w-full bg-rose-600 hover:bg-rose-700 py-6 rounded-3xl text-xl font-semibold transition">
+      <form id="contact-form" class="space-y-4 sm:space-y-6">
+        <input type="text" id="name" placeholder="Your Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500 text-sm sm:text-base">
+        <input type="email" id="email" placeholder="Email or WhatsApp Number" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500 text-sm sm:text-base">
+        <textarea id="message" rows="4" placeholder="Your Message..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-3xl px-6 py-4 focus:outline-none focus:border-emerald-500 text-sm sm:text-base"></textarea>
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 py-5 rounded-3xl text-lg sm:text-xl font-semibold transition">
           Send Message
         </button>
       </form>
@@ -125,27 +100,192 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-zinc-950 border-t border-zinc-800 py-16">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+  <footer class="bg-zinc-950 border-t border-zinc-800 py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8 sm:gap-12">
       <div>
-        <div class="flex items-center gap-3 mb-6">
-          <div class="w-9 h-9 bg-rose-600 rounded-full flex items-center justify-center text-2xl">K</div>
-          <h3 class="logo-font text-4xl">Kanishq Clothing</h3>
+        <div class="flex items-center gap-3 mb-4 sm:mb-6">
+          <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-2xl">K</div>
+          <h3 class="logo-font text-3xl sm:text-4xl">Kanishq Clothing</h3>
         </div>
-        <p class="text-zinc-400">Indore, Madhya Pradesh<br>Premium fashion for real people.</p>
+        <p class="text-zinc-400 text-sm sm:text-base">Indore, Madhya Pradesh<br>Premium fashion, made real.</p>
       </div>
       <div>
-        <h4 class="font-semibold mb-6 text-lg">Quick Links</h4>
-        <ul class="space-y-3 text-zinc-400">
+        <h4 class="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Quick Links</h4>
+        <ul class="space-y-2 sm:space-y-3 text-zinc-400 text-sm sm:text-base">
           <li><a href="#" onclick="showPolicy('privacy')" class="hover:text-white">Privacy Policy</a></li>
           <li><a href="#" onclick="showPolicy('terms')" class="hover:text-white">Terms & Conditions</a></li>
           <li><a href="#" onclick="showPolicy('refund')" class="hover:text-white">Refund Policy</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="font-semibold mb-6 text-lg">Contact</h4>
-        <p class="text-zinc-400">📍 Indore, MP<br>📞 +91-XXXXXXXXXX<br>✉️ hello@kanishqclothing.in</p>
-        <div class="flex gap-6 mt-8 text-3xl">
+        <h4 class="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Contact</h4>
+        <p class="text-zinc-400 text-sm sm:text-base">📍 Indore, MP<br>📞 +91-XXXXXXXXXX<br>✉️ hello@kanishqclothing.in</p>
+        <div class="flex gap-6 mt-6 sm:mt-8 text-2xl sm:text-3xl">
+          <i class="fa-brands fa-instagram hover:text-emerald-400 cursor-pointer"></i>
+          <i class="fa-brands fa-whatsapp hover:text-emerald-400 cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-zinc-500 mt-10 sm:mt-16 text-sm">© 2026 Kanishq Clothing • Made for style lovers</p>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-[100] px-4">
+    <div class="bg-zinc-900 w-full max-w-md sm:max-w-lg mx-auto rounded-3xl overflow-hidden">
+      <div class="p-5 sm:p-6 border-b border-zinc-700 flex justify-between items-center">
+        <h3 class="text-xl sm:text-2xl font-semibold">Your Cart</h3>
+        <button onclick="closeCart()" class="text-3xl leading-none">&times;</button>
+      </div>
+      <div id="cart-items" class="p-5 sm:p-6 max-h-[50vh] sm:max-h-[60vh] overflow-auto space-y-4 sm:space-y-6"></div>
+      <div class="p-5 sm:p-6 border-t border-zinc-700">
+        <div class="flex justify-between text-lg sm:text-xl mb-4 sm:mb-6">
+          <span>Total</span>
+          <span id="cart-total" class="font-bold">₹0</span>
+        </div>
+        <button onclick="checkout()" 
+                class="w-full bg-emerald-600 text-white py-4 sm:py-6 rounded-3xl font-semibold text-base sm:text-lg hover:bg-emerald-700 transition">
+          Proceed to Payment
+        </button>
+        <p class="text-center text-zinc-500 text-xs sm:text-sm mt-3">Integrate Cashfree/Instamojo for real payments</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const products = [
+      {id:1, name:"Oversized Black Tee", price:499, category:"men", img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800"},
+      {id:2, name:"Slim Fit Blue Jeans", price:999, category:"men", img:"https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?auto=format&fit=crop&q=80&w=800"},
+      {id:3, name:"Cozy Grey Hoodie", price:1299, category:"hoodie", img:"https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=800"},
+      {id:4, name:"Denim Trucker Jacket", price:1499, category:"men", img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800"},
+      {id:5, name:"Pink Crop Top", price:599, category:"women", img:"https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=800"},
+      {id:6, name:"White Casual Kurta", price:799, category:"men", img:"https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&q=80&w=800"},
+      {id:7, name:"Formal Oxford Shirt", price:899, category:"men", img:"https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&q=80&w=800"},
+      {id:8, name:"Leather Look Biker Jacket", price:1799, category:"men", img:"https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800"},
+      {id:9, name:"High Waist Mom Jeans", price:1099, category:"women", img:"https://images.unsplash.com/photo-1541099649105-f69ad21f864f?auto=format&fit=crop&q=80&w=800"},
+      {id:10, name:"Oversized Sweatshirt", price:899, category:"hoodie", img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=800"},
+    ];
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function renderProducts(filtered) {
+      const grid = document.getElementById('product-grid');
+      grid.innerHTML = '';
+      filtered.forEach(p => {
+        grid.innerHTML += `
+          <div class="product-card bg-zinc-900 rounded-2xl sm:rounded-3xl overflow-hidden">
+            <img src="\( {p.img}" alt=" \){p.name}" class="w-full h-64 sm:h-80 object-cover">
+            <div class="p-4 sm:p-6">
+              <h3 class="font-semibold text-lg sm:text-xl mb-1">${p.name}</h3>
+              <p class="text-emerald-400 text-xl sm:text-2xl font-bold">₹${p.price}</p>
+              <button onclick="addToCart(${p.id})" 
+                      class="mt-4 sm:mt-6 w-full bg-zinc-800 text-white py-3 sm:py-4 rounded-2xl font-medium hover:bg-emerald-600 transition">
+                Add to Cart
+              </button>
+            </div>
+          </div>`;
+      });
+    }
+
+    function addToCart(id) {
+      const product = products.find(p => p.id === id);
+      const existing = cart.find(item => item.id === id);
+      if (existing) existing.qty++;
+      else cart.push({...product, qty: 1});
+      localStorage.setItem('cart', JSON.stringify(cart));
+      updateCartCount();
+      alert(`${product.name} added!`);
+    }
+
+    function updateCartCount() {
+      document.getElementById('cart-count').textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+    }
+
+    function showCart() {
+      const modal = document.getElementById('cart-modal');
+      const itemsDiv = document.getElementById('cart-items');
+      itemsDiv.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, i) => {
+        total += item.price * item.qty;
+        itemsDiv.innerHTML += `
+          <div class="flex gap-4">
+            <img src="${item.img}" class="w-16 sm:w-20 h-16 sm:h-20 object-cover rounded-xl">
+            <div class="flex-1">
+              <h4 class="text-base sm:text-lg">${item.name}</h4>
+              <p class="text-emerald-400 text-sm sm:text-base">₹${item.price} × ${item.qty}</p>
+              <div class="flex gap-2 sm:gap-3 mt-2">
+                <button onclick="changeQty(${i}, -1)" class="w-8 h-8 bg-zinc-800 rounded-lg">-</button>
+                <span class="py-1 px-3 sm:px-4">${item.qty}</span>
+                <button onclick="changeQty(${i}, 1)" class="w-8 h-8 bg-zinc-800 rounded-lg">+</button>
+                <button onclick="removeFromCart(${i})" class="ml-auto text-red-500 text-sm">Remove</button>
+              </div>
+            </div>
+          </div>`;
+      });
+
+      document.getElementById('cart-total').textContent = `₹${total}`;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function changeQty(i, delta) {
+      cart[i].qty += delta;
+      if (cart[i].qty < 1) cart.splice(i, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      showCart();
+      updateCartCount();
+    }
+
+    function removeFromCart(i) {
+      cart.splice(i, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      showCart();
+      updateCartCount();
+    }
+
+    function closeCart() {
+      document.getElementById('cart-modal').classList.add('hidden');
+      document.getElementById('cart-modal').classList.remove('flex');
+    }
+
+    function checkout() {
+      if (cart.length === 0) return alert("Cart is empty!");
+      alert("Ready for real payment! Integrate Cashfree or Instamojo here.\nTotal: ₹" + cart.reduce((s, i) => s + i.price * i.qty, 0));
+    }
+
+    function filterCategory(cat) {
+      document.querySelectorAll('button[onclick^="filterCategory"]').forEach(b => b.classList.remove('active', 'bg-emerald-600'));
+      event.target.classList.add('active', 'bg-emerald-600');
+      let filtered = cat === 'all' ? products : products.filter(p => p.category === cat);
+      renderProducts(filtered);
+    }
+
+    document.getElementById('search').addEventListener('input', e => {
+      const term = e.target.value.toLowerCase();
+      renderProducts(products.filter(p => p.name.toLowerCase().includes(term)));
+    });
+
+    document.getElementById('contact-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert("Message sent! We'll reply soon.");
+      e.target.reset();
+    });
+
+    function showPolicy(type) {
+      let msg = type === 'privacy' ? "We respect your privacy. Data used only for orders." :
+                type === 'terms' ? "7-day return for defective items." : "Refund/replace within 7 days if defective.";
+      alert(msg);
+    }
+
+    window.onload = () => {
+      renderProducts(products);
+      updateCartCount();
+      document.getElementById('cart-btn').addEventListener('click', showCart);
+    }
+  </script>
+</body>
+</html>        <div class="flex gap-6 mt-8 text-3xl">
           <i class="fa-brands fa-instagram hover:text-rose-500 cursor-pointer"></i>
           <i class="fa-brands fa-whatsapp hover:text-rose-500 cursor-pointer"></i>
         </div>
