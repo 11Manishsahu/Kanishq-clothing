@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Kanishq Clothing - Premium Fashion from Indore | Stylish & Affordable Clothes"/>
+  <meta name="description" content="Kanishq Clothing - Premium Fashion from Indore | Stylish & Affordable"/>
   <title>Kanishq Clothing • Premium Fashion</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
@@ -19,7 +19,7 @@
 <body class="bg-zinc-950 text-white min-h-screen">
 
   <!-- Top Banner -->
-  <div class="bg-teal-700 py-2 sm:py-3 text-center text-xs sm:text-sm font-medium">
+  <div class="bg-emerald-700 py-2 sm:py-3 text-center text-xs sm:text-sm font-medium">
     Free Shipping on orders above ₹999 | Direct from Indore
   </div>
 
@@ -27,25 +27,25 @@
   <nav class="sticky top-0 z-50 bg-zinc-900/95 backdrop-blur border-b border-zinc-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 bg-teal-600 rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold">K</div>
+        <div class="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-600 rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold">K</div>
         <h1 class="logo-font text-2xl sm:text-3xl tracking-tight">Kanishq</h1>
       </div>
       
       <div class="hidden md:flex items-center gap-8 lg:gap-10 text-base lg:text-lg">
-        <a href="#shop" class="hover:text-teal-400 transition">Shop</a>
-        <a href="#categories" class="hover:text-teal-400 transition">Categories</a>
-        <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+        <a href="#shop" class="hover:text-emerald-400 transition">Shop</a>
+        <a href="#categories" class="hover:text-emerald-400 transition">Categories</a>
+        <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
       </div>
 
       <div class="flex items-center gap-4 sm:gap-6">
         <div class="relative hidden sm:block">
           <input id="search" type="text" placeholder="Search products..." 
-                 class="bg-zinc-800 border border-zinc-700 rounded-full pl-9 sm:pl-10 py-2.5 sm:py-3 w-40 sm:w-64 focus:outline-none focus:border-teal-500 text-sm">
+                 class="bg-zinc-800 border border-zinc-700 rounded-full pl-9 sm:pl-10 py-2.5 sm:py-3 w-40 sm:w-64 focus:outline-none focus:border-emerald-500 text-sm">
           <i class="fa-solid fa-magnifying-glass absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-zinc-400 text-sm"></i>
         </div>
         <button id="cart-btn" class="relative">
-          <i class="fa-solid fa-bag-shopping text-xl sm:text-2xl hover:text-teal-400 transition"></i>
-          <span id="cart-count" class="absolute -top-1.5 -right-2 bg-teal-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
+          <i class="fa-solid fa-bag-shopping text-xl sm:text-2xl hover:text-emerald-400 transition"></i>
+          <span id="cart-count" class="absolute -top-1.5 -right-2 bg-emerald-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
         </button>
       </div>
     </div>
@@ -54,10 +54,10 @@
   <!-- Hero -->
   <section class="hero-bg h-[60vh] sm:h-[80vh] flex items-center justify-center text-center px-4">
     <div class="max-w-3xl">
-      <p class="text-teal-300 text-sm sm:text-base tracking-wider mb-3 sm:mb-4 uppercase">Indore's Premium Fashion</p>
+      <p class="text-emerald-300 text-sm sm:text-base tracking-wider mb-3 sm:mb-4 uppercase">Indore's Premium Fashion</p>
       <h2 class="text-4xl sm:text-6xl font-bold leading-tight logo-font mb-4 sm:mb-6">Elevate Your Style</h2>
       <p class="text-base sm:text-xl text-zinc-300 mb-6 sm:mb-10">Modern, affordable clothing crafted for everyday confidence.</p>
-      <a href="#shop" class="inline-block bg-teal-600 text-white px-8 sm:px-12 py-3 sm:py-5 rounded-full font-semibold text-base sm:text-lg hover:bg-teal-700 transition">Shop Now</a>
+      <a href="#shop" class="inline-block bg-emerald-600 text-white px-8 sm:px-12 py-3 sm:py-5 rounded-full font-semibold text-base sm:text-lg hover:bg-emerald-700 transition">Shop Now</a>
     </div>
   </section>
 
@@ -66,10 +66,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">Shop by Category</h2>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-        <button onclick="filterCategory('all')" class="cat-btn active bg-zinc-800 hover:bg-teal-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">All</button>
-        <button onclick="filterCategory('men')" class="cat-btn bg-zinc-800 hover:bg-teal-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Men</button>
-        <button onclick="filterCategory('women')" class="cat-btn bg-zinc-800 hover:bg-teal-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Women</button>
-        <button onclick="filterCategory('hoodie')" class="cat-btn bg-zinc-800 hover:bg-teal-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Hoodies</button>
+        <button onclick="filterCategory('all')" class="cat-btn active bg-zinc-800 hover:bg-emerald-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">All</button>
+        <button onclick="filterCategory('men')" class="cat-btn bg-zinc-800 hover:bg-emerald-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Men</button>
+        <button onclick="filterCategory('women')" class="cat-btn bg-zinc-800 hover:bg-emerald-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Women</button>
+        <button onclick="filterCategory('hoodie')" class="cat-btn bg-zinc-800 hover:bg-emerald-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Hoodies</button>
       </div>
     </div>
   </section>
@@ -89,10 +89,10 @@
       <p class="text-center text-zinc-400 mb-8 text-sm sm:text-base">Questions? Message us – quick reply!</p>
       
       <form id="contact-form" class="space-y-4">
-        <input type="text" id="name" placeholder="Your Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-5 py-3 focus:outline-none focus:border-teal-500 text-sm sm:text-base">
-        <input type="email" id="email" placeholder="Email or WhatsApp" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-5 py-3 focus:outline-none focus:border-teal-500 text-sm sm:text-base">
-        <textarea id="message" rows="4" placeholder="Message..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-3 focus:outline-none focus:border-teal-500 text-sm sm:text-base"></textarea>
-        <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 py-4 rounded-xl text-base sm:text-lg font-semibold transition">
+        <input type="text" id="name" placeholder="Your Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-5 py-3 focus:outline-none focus:border-emerald-500 text-sm sm:text-base">
+        <input type="email" id="email" placeholder="Email or WhatsApp" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-5 py-3 focus:outline-none focus:border-emerald-500 text-sm sm:text-base">
+        <textarea id="message" rows="4" placeholder="Message..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-3 focus:outline-none focus:border-emerald-500 text-sm sm:text-base"></textarea>
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 py-4 rounded-xl text-base sm:text-lg font-semibold transition">
           Send Message
         </button>
       </form>
@@ -104,7 +104,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
       <div>
         <div class="flex items-center gap-3 mb-4">
-          <div class="w-9 h-9 bg-teal-600 rounded-full flex items-center justify-center text-xl">K</div>
+          <div class="w-9 h-9 bg-emerald-600 rounded-full flex items-center justify-center text-xl">K</div>
           <h3 class="logo-font text-2xl sm:text-3xl">Kanishq Clothing</h3>
         </div>
         <p class="text-zinc-400 text-sm">Indore, Madhya Pradesh<br>Premium fashion for real life.</p>
@@ -112,17 +112,17 @@
       <div>
         <h4 class="font-semibold mb-4 text-base">Quick Links</h4>
         <ul class="space-y-2 text-zinc-400 text-sm">
-          <li><a href="#" onclick="showPolicy('privacy')" class="hover:text-teal-400">Privacy Policy</a></li>
-          <li><a href="#" onclick="showPolicy('terms')" class="hover:text-teal-400">Terms & Conditions</a></li>
-          <li><a href="#" onclick="showPolicy('refund')" class="hover:text-teal-400">Refund Policy</a></li>
+          <li><a href="#" onclick="showPolicy('privacy')" class="hover:text-emerald-400">Privacy Policy</a></li>
+          <li><a href="#" onclick="showPolicy('terms')" class="hover:text-emerald-400">Terms & Conditions</a></li>
+          <li><a href="#" onclick="showPolicy('refund')" class="hover:text-emerald-400">Refund Policy</a></li>
         </ul>
       </div>
       <div>
         <h4 class="font-semibold mb-4 text-base">Contact</h4>
         <p class="text-zinc-400 text-sm">📍 Indore, MP<br>📞 +91-XXXXXXXXXX<br>✉️ hello@kanishqclothing.in</p>
         <div class="flex gap-5 mt-5 text-2xl">
-          <i class="fa-brands fa-instagram hover:text-teal-400 cursor-pointer"></i>
-          <i class="fa-brands fa-whatsapp hover:text-teal-400 cursor-pointer"></i>
+          <i class="fa-brands fa-instagram hover:text-emerald-400 cursor-pointer"></i>
+          <i class="fa-brands fa-whatsapp hover:text-emerald-400 cursor-pointer"></i>
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@
     <div class="bg-zinc-900 w-full max-w-md sm:max-w-lg rounded-2xl sm:rounded-3xl overflow-hidden">
       <div class="p-5 border-b border-zinc-700 flex justify-between items-center">
         <h3 class="text-xl font-semibold">Your Cart</h3>
-        <button onclick="closeCart()" class="text-3xl leading-none hover:text-teal-400">&times;</button>
+        <button onclick="closeCart()" class="text-3xl leading-none hover:text-emerald-400">&times;</button>
       </div>
       <div id="cart-items" class="p-5 max-h-[50vh] overflow-auto space-y-5"></div>
       <div class="p-5 border-t border-zinc-700">
@@ -143,7 +143,7 @@
           <span id="cart-total" class="font-bold">₹0</span>
         </div>
         <button onclick="checkout()" 
-                class="w-full bg-teal-600 text-white py-4 rounded-2xl font-semibold hover:bg-teal-700 transition">
+                class="w-full bg-emerald-600 text-white py-4 rounded-2xl font-semibold hover:bg-emerald-700 transition">
           Proceed to Payment
         </button>
         <p class="text-center text-zinc-500 text-xs mt-3">Use Cashfree/Instamojo for real payments</p>
@@ -152,6 +152,7 @@
   </div>
 
   <script>
+    // (Yeh script same hai pehle wala – no change needed, sirf colours update hue hain classes mein)
     const products = [
       {id:1, name:"Oversized Black Tee", price:499, category:"men", img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800"},
       {id:2, name:"Slim Fit Blue Jeans", price:999, category:"men", img:"https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?auto=format&fit=crop&q=80&w=800"},
@@ -173,8 +174,8 @@
           <img src="\( {p.img}" alt=" \){p.name}" class="w-full h-60 sm:h-72 object-cover">
           <div class="p-4 sm:p-5">
             <h3 class="font-semibold text-base sm:text-lg mb-1">${p.name}</h3>
-            <p class="text-teal-400 text-lg sm:text-xl font-bold">₹${p.price}</p>
-            <button onclick="addToCart(${p.id})" class="mt-4 w-full bg-zinc-800 text-white py-3 rounded-xl hover:bg-teal-600 transition text-sm sm:text-base">
+            <p class="text-emerald-400 text-lg sm:text-xl font-bold">₹${p.price}</p>
+            <button onclick="addToCart(${p.id})" class="mt-4 w-full bg-zinc-800 text-white py-3 rounded-xl hover:bg-emerald-600 transition text-sm sm:text-base">
               Add to Cart
             </button>
           </div>
@@ -209,7 +210,7 @@
             <img src="${item.img}" class="w-16 h-16 object-cover rounded-xl">
             <div class="flex-1">
               <h4 class="text-base">${item.name}</h4>
-              <p class="text-teal-400 text-sm">₹${item.price} × ${item.qty}</p>
+              <p class="text-emerald-400 text-sm">₹${item.price} × ${item.qty}</p>
               <div class="flex gap-3 mt-2">
                 <button onclick="changeQty(${i}, -1)" class="w-8 h-8 bg-zinc-800 rounded-lg text-white">-</button>
                 <span class="py-1 px-3">${item.qty}</span>
@@ -251,8 +252,8 @@
     }
 
     function filterCategory(cat) {
-      document.querySelectorAll('button[onclick^="filterCategory"]').forEach(b => b.classList.remove('active', 'bg-teal-600'));
-      event.target.classList.add('active', 'bg-teal-600');
+      document.querySelectorAll('button[onclick^="filterCategory"]').forEach(b => b.classList.remove('active', 'bg-emerald-600'));
+      event.target.classList.add('active', 'bg-emerald-600');
       let filtered = cat === 'all' ? products : products.filter(p => p.category === cat);
       renderProducts(filtered);
     }
