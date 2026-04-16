@@ -3,281 +3,329 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Kanishq Clothing - Premium Fashion from Indore | Stylish & Affordable"/>
-  <title>Kanishq Clothing • Premium Fashion</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <title>Kanishq Clothing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
-    body { font-family: 'Inter', sans-serif; }
-    .logo-font { font-family: 'Playfair Display', serif; }
-    .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-    .product-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5); }
-    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; }
-  </style>
-</head>
-<body class="bg-zinc-950 text-white min-h-screen">
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff7ed; color: #2d3748; line-height: 1.6; overflow-x: hidden; }
 
-  <!-- Top Banner -->
-  <div class="bg-orange-700 py-2 sm:py-3 text-center text-xs sm:text-sm font-medium">
-    Free Shipping on orders above ₹999 | Direct from Indore
-  </div>
+    header { background: linear-gradient(90deg, #1a202c, #2b6cb0); color: #fff; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    header h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; }
+    nav a { color: #fff; text-decoration: none; font-size: 1rem; margin-left: 1.5rem; }
+    nav a:hover { color: #f6ad55; }
+    .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
+    .nav-links { display: flex; }
 
-  <!-- Navbar -->
-  <nav class="sticky top-0 z-50 bg-zinc-900/95 backdrop-blur border-b border-zinc-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 bg-orange-600 rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold">K</div>
-        <h1 class="logo-font text-2xl sm:text-3xl tracking-tight">Kanishq</h1>
-      </div>
-      
-      <div class="hidden md:flex items-center gap-8 lg:gap-10 text-base lg:text-lg">
-        <a href="#shop" class="hover:text-orange-400 transition">Shop</a>
-        <a href="#categories" class="hover:text-orange-400 transition">Categories</a>
-        <a href="#contact" class="hover:text-orange-400 transition">Contact</a>
-      </div>
-
-      <div class="flex items-center gap-4 sm:gap-6">
-        <div class="relative hidden sm:block">
-          <input id="search" type="text" placeholder="Search products..." 
-                 class="bg-zinc-800 border border-zinc-700 rounded-full pl-9 sm:pl-10 py-2.5 sm:py-3 w-40 sm:w-64 focus:outline-none focus:border-orange-500 text-sm">
-          <i class="fa-solid fa-magnifying-glass absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-zinc-400 text-sm"></i>
-        </div>
-        <button id="cart-btn" class="relative">
-          <i class="fa-solid fa-bag-shopping text-xl sm:text-2xl hover:text-orange-400 transition"></i>
-          <span id="cart-count" class="absolute -top-1.5 -right-2 bg-orange-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">0</span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero-bg h-[60vh] sm:h-[80vh] flex items-center justify-center text-center px-4">
-    <div class="max-w-3xl">
-      <p class="text-orange-300 text-sm sm:text-base tracking-wider mb-3 sm:mb-4 uppercase">Indore's Premium Fashion</p>
-      <h2 class="text-4xl sm:text-6xl font-bold leading-tight logo-font mb-4 sm:mb-6">Elevate Your Style</h2>
-      <p class="text-base sm:text-xl text-zinc-300 mb-6 sm:mb-10">Modern, affordable clothing crafted for everyday confidence.</p>
-      <a href="#shop" class="inline-block bg-orange-600 text-white px-8 sm:px-12 py-3 sm:py-5 rounded-full font-semibold text-base sm:text-lg hover:bg-orange-700 transition">Shop Now</a>
-    </div>
-  </section>
-
-  <!-- Categories -->
-  <section id="categories" class="py-12 sm:py-16 bg-zinc-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">Shop by Category</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-        <button onclick="filterCategory('all')" class="cat-btn active bg-zinc-800 hover:bg-orange-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">All</button>
-        <button onclick="filterCategory('men')" class="cat-btn bg-zinc-800 hover:bg-orange-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Men</button>
-        <button onclick="filterCategory('women')" class="cat-btn bg-zinc-800 hover:bg-orange-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Women</button>
-        <button onclick="filterCategory('hoodie')" class="cat-btn bg-zinc-800 hover:bg-orange-600 py-5 sm:py-8 rounded-2xl text-lg sm:text-2xl font-medium transition">Hoodies</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products -->
-  <section id="shop" class="py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-16">Our Collection</h2>
-      <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-8"></div>
-    </div>
-  </section>
-
-  <!-- Contact Us -->
-  <section id="contact" class="py-12 sm:py-16 bg-zinc-950">
-    <div class="max-w-xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">Get in Touch</h2>
-      <p class="text-center text-zinc-400 mb-8 text-sm sm:text-base">Questions? Message us – quick reply!</p>
-      
-      <form id="contact-form" class="space-y-4">
-        <input type="text" id="name" placeholder="Your Name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-5 py-3 focus:outline-none focus:border-orange-500 text-sm sm:text-base">
-        <input type="email" id="email" placeholder="Email or WhatsApp" required class="w-full bg-zinc-900 border border-zinc-700 rounded-xl px-5 py-3 focus:outline-none focus:border-orange-500 text-sm sm:text-base">
-        <textarea id="message" rows="4" placeholder="Message..." required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-5 py-3 focus:outline-none focus:border-orange-500 text-sm sm:text-base"></textarea>
-        <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 py-4 rounded-xl text-base sm:text-lg font-semibold transition">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-zinc-950 border-t border-zinc-800 py-10 sm:py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <div class="w-9 h-9 bg-orange-600 rounded-full flex items-center justify-center text-xl">K</div>
-          <h3 class="logo-font text-2xl sm:text-3xl">Kanishq Clothing</h3>
-        </div>
-        <p class="text-zinc-400 text-sm">Indore, Madhya Pradesh<br>Premium fashion for real life.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold mb-4 text-base">Quick Links</h4>
-        <ul class="space-y-2 text-zinc-400 text-sm">
-          <li><a href="#" onclick="showPolicy('privacy')" class="hover:text-orange-400">Privacy Policy</a></li>
-          <li><a href="#" onclick="showPolicy('terms')" class="hover:text-orange-400">Terms & Conditions</a></li>
-          <li><a href="#" onclick="showPolicy('refund')" class="hover:text-orange-400">Refund Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-semibold mb-4 text-base">Contact</h4>
-        <p class="text-zinc-400 text-sm">📍 Indore, MP<br>📞 +91-XXXXXXXXXX<br>✉️ hello@kanishqclothing.in</p>
-        <div class="flex gap-5 mt-5 text-2xl">
-          <i class="fa-brands fa-instagram hover:text-orange-400 cursor-pointer"></i>
-          <i class="fa-brands fa-whatsapp hover:text-orange-400 cursor-pointer"></i>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-zinc-500 mt-8 text-sm">© 2026 Kanishq Clothing • Designed for style</p>
-  </footer>
-
-  <!-- Cart Modal -->
-  <div id="cart-modal" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4">
-    <div class="bg-zinc-900 w-full max-w-md sm:max-w-lg rounded-2xl sm:rounded-3xl overflow-hidden">
-      <div class="p-5 border-b border-zinc-700 flex justify-between items-center">
-        <h3 class="text-xl font-semibold">Your Cart</h3>
-        <button onclick="closeCart()" class="text-3xl leading-none hover:text-orange-400">&times;</button>
-      </div>
-      <div id="cart-items" class="p-5 max-h-[50vh] overflow-auto space-y-5"></div>
-      <div class="p-5 border-t border-zinc-700">
-        <div class="flex justify-between text-lg mb-4">
-          <span>Total</span>
-          <span id="cart-total" class="font-bold">₹0</span>
-        </div>
-        <button onclick="checkout()" 
-                class="w-full bg-orange-600 text-white py-4 rounded-2xl font-semibold hover:bg-orange-700 transition">
-          Proceed to Payment
-        </button>
-        <p class="text-center text-zinc-500 text-xs mt-3">Use Cashfree/Instamojo for real payments</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const products = [
-      {id:1, name:"Oversized Black Tee", price:499, category:"men", img:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800"},
-      {id:2, name:"Slim Fit Blue Jeans", price:999, category:"men", img:"https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?auto=format&fit=crop&q=80&w=800"},
-      {id:3, name:"Cozy Grey Hoodie", price:1299, category:"hoodie", img:"https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=800"},
-      {id:4, name:"Denim Trucker Jacket", price:1499, category:"men", img:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800"},
-      {id:5, name:"Pink Crop Top", price:599, category:"women", img:"https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&q=80&w=800"},
-      {id:6, name:"White Casual Kurta", price:799, category:"men", img:"https://images.unsplash.com/photo-1620012253295-c15cc3e65df4?auto=format&fit=crop&q=80&w=800"},
-      {id:7, name:"Formal Oxford Shirt", price:899, category:"men", img:"https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&q=80&w=800"},
-      {id:8, name:"Leather Look Biker Jacket", price:1799, category:"men", img:"https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=800"},
-      {id:9, name:"High Waist Mom Jeans", price:1099, category:"women", img:"https://images.unsplash.com/photo-1541099649105-f69ad21f864f?auto=format&fit=crop&q=80&w=800"},
-      {id:10, name:"Oversized Sweatshirt", price:899, category:"hoodie", img:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=800"},
-    ];
-
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    function renderProducts(filtered) {
-      document.getElementById('product-grid').innerHTML = filtered.map(p => `
-        <div class="product-card bg-zinc-900 rounded-2xl overflow-hidden">
-          <img src="\( {p.img}" alt=" \){p.name}" class="w-full h-60 sm:h-72 object-cover">
-          <div class="p-4 sm:p-5">
-            <h3 class="font-semibold text-base sm:text-lg mb-1">${p.name}</h3>
-            <p class="text-orange-400 text-lg sm:text-xl font-bold">₹${p.price}</p>
-            <button onclick="addToCart(${p.id})" class="mt-4 w-full bg-zinc-800 text-white py-3 rounded-xl hover:bg-orange-600 transition text-sm sm:text-base">
-              Add to Cart
-            </button>
-          </div>
-        </div>
-      `).join('');
+    /* Floating Cart Button */
+    .floating-cart {
+      position: fixed; bottom: 25px; right: 25px; background: #2b6cb0; color: white;
+      width: 62px; height: 62px; border-radius: 50%; display: flex; align-items: center;
+      justify-content: center; font-size: 1.9rem; box-shadow: 0 6px 20px rgba(43,108,176,0.4);
+      z-index: 2000; cursor: pointer; transition: all 0.3s ease;
+    }
+    .floating-cart:hover { background: #f6ad55; transform: scale(1.08); }
+    .floating-cart .badge {
+      position: absolute; top: -6px; right: -6px; background: #c53030; color: white;
+      font-size: 0.8rem; font-weight: bold; min-width: 24px; height: 24px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
     }
 
-    function addToCart(id) {
-      const product = products.find(p => p.id === id);
-      const existing = cart.find(item => item.id === id);
-      if (existing) existing.qty++;
-      else cart.push({...product, qty: 1});
-      localStorage.setItem('cart', JSON.stringify(cart));
+    /* Hero Section - Clothing image from your first screenshot (green model theme) */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+                  url('https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: #fff;
+      padding: 8rem 2rem;
+      text-align: center;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero h2 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; max-width: 600px; margin: 0 auto 2rem; }
+    .hero button { background: #f6ad55; color: #1a202c; border: none; padding: 1rem 2rem; font-size: 1.1rem; border-radius: 8px; cursor: pointer; }
+    .hero button:hover { background: #ed8936; transform: scale(1.05); }
+
+    /* About Section - Completely plain (no background image at all) */
+    .about {
+      background: #fff7ed;
+      padding: 4rem 2rem;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .about h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #2d3748; margin-bottom: 1.5rem; }
+    .about p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 1rem; }
+
+    .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+    .product-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-align: center; position: relative; }
+    .product-card img { width: 100%; height: 220px; object-fit: cover; }
+    .product-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin: 1rem 0 0.5rem; color: #2d3748; }
+    .product-card p { font-size: 1.2rem; font-weight: 600; color: #c53030; margin-bottom: 1rem; }
+    .product-card button { background: #2b6cb0; color: #fff; border: none; padding: 0.8rem 1.5rem; cursor: pointer; border-radius: 8px; font-size: 1rem; font-weight: 500; }
+    .product-card button:hover { background: #f6ad55; transform: scale(1.05); }
+    .badge { position: absolute; top: 10px; right: 10px; background: #f6ad55; color: #1a202c; padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+
+    .product-image-slider { position: relative; width: 100%; height: 220px; overflow: hidden; }
+    .product-image-slider img { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease; }
+    .product-image-slider img.active { opacity: 1; z-index: 1; }
+    .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; width: 35px; height: 35px; font-size: 1.2rem; cursor: pointer; z-index: 2; border-radius: 50%; }
+    .slider-btn.prev { left: 10px; }
+    .slider-btn.next { right: 10px; }
+
+    .product-details { color: #1a202c; font-size: 0.88rem; line-height: 1.4; text-align: left; padding: 0 1rem 0.5rem; margin-bottom: 0.5rem; }
+    .product-details ul { list-style-type: disc; padding-left: 1.2rem; margin: 0.4rem 0; }
+    .product-details li { margin-bottom: 0.25rem; }
+
+    .contact { padding: 4rem 2rem; text-align: center; background: #f8fafc; max-width: 1200px; margin: 0 auto; }
+    .contact h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #2d3748; margin-bottom: 1.5rem; }
+    .contact p { font-size: 1.1rem; margin-bottom: 1rem; }
+    .contact a { color: #2b6cb0; text-decoration: none; font-weight: 500; }
+    .contact a:hover { color: #f6ad55; }
+    .contact .call-btn { display: inline-block; background: #2b6cb0; color: #fff; padding: 0.8rem 2rem; border-radius: 8px; margin: 1rem 0; }
+
+    .cart-overlay { display: none; position: fixed; top: 0; right: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; align-items: center; justify-content: flex-end; }
+    .cart-box { background: #fff; width: 100%; max-width: 450px; height: 100%; padding: 2rem; position: relative; animation: slideInRight 0.4s ease; }
+    @keyframes slideInRight { from { transform: translateX(100%); } to { transform: translateX(0); } }
+    .cart-box h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: #2d3748; margin-bottom: 1.5rem; }
+    .cart-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #edf2f7; }
+    .quantity-controls button { width: 32px; height: 32px; border: 1px solid #cbd5e0; background: white; border-radius: 6px; cursor: pointer; font-size: 1.1rem; }
+    .remove-btn { color: #c53030; background: none; border: none; font-size: 1.4rem; cursor: pointer; }
+
+    footer { background: #1a202c; color: #fff; text-align: center; padding: 3rem 2rem; margin-top: 3rem; }
+    .social-media { display: flex; justify-content: center; gap: 1rem; }
+    .social-media a { color: #fff; font-size: 1.5rem; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #2d3748; border-radius: 50%; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; right: 0; background: #1a202c; width: 200px; padding: 1rem; }
+      .nav-links.active { display: flex; }
+      .hamburger { display: block; }
+      .product-card img, .product-image-slider { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kanishq Clothing</h1>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#" onclick="showCart()">🛒 Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Discover Premium Clothing Accessories</h2>
+    <p>Timeless elegance, modern comfort — crafted for those who dress with confidence</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Kanishq Clothing</h2>
+    <p>At Kanishq Clothing, we believe clothing is more than fabric — it is a statement of confidence, elegance, and individuality. Founded with a passion for timeless design and superior craftsmanship, we curate premium clothing and accessories that blend classic sophistication with contemporary style.</p>
+    <p>Every piece is thoughtfully designed using the finest materials and meticulous attention to detail. From luxurious shirts to refined jackets and elegant accessories, Kanishq Clothing empowers you to express your unique personality with grace and poise.</p>
+    <p>Our mission is simple: to make you look and feel exceptional, every single day.</p>
+  </section>
+
+  <section class="products" id="products">
+    <div class="product-card"><img src="mattehouse.jpg" alt="Premium Cotton Shirt"><span class="badge">New</span><h3>Premium Cotton Shirt</h3><p>₹1300</p><button onclick="addToCart('Premium Cotton Shirt', 1300)">Add to Cart</button></div>
+    <div class="product-card"><img src="shoe.jpg" alt="Slim Fit Denim Jacket"><span class="badge">Popular</span><h3>Slim Fit Denim Jacket</h3><p>₹1500</p><button onclick="addToCart('Slim Fit Denim Jacket', 1500)">Add to Cart</button></div>
+    <div class="product-card"><img src="patta.jpg" alt="Luxury Silk Scarf"><span class="badge">Sale</span><h3>Luxury Silk Scarf</h3><p>₹1200</p><button onclick="addToCart('Luxury Silk Scarf', 1200)">Add to Cart</button></div>
+    <div class="product-card"><img src="oil.jpg" alt="Handcrafted Leather Belt"><span class="badge">New</span><h3>Handcrafted Leather Belt</h3><p>₹1000</p><button onclick="addToCart('Handcrafted Leather Belt', 1000)">Add to Cart</button></div>
+
+    <div class="product-card">
+      <div class="product-image-slider">
+        <img src="house.jpg" alt="View 1" class="active">
+        <img src="house2.jpg" alt="View 2">
+        <img src="house3.jpg" alt="View 3">
+        <img src="house4.jpg" alt="View 4">
+        <button class="slider-btn prev" onclick="prevSlide(this)">‹</button>
+        <button class="slider-btn next" onclick="nextSlide(this)">›</button>
+      </div>
+      <span class="badge">New</span>
+      <h3>Premium Leather Blazer</h3>
+      <div class="product-details">
+        <ul>
+          <li>Italian leather with premium finish</li>
+          <li><strong>Available Sizes:</strong> S | M | L | XL</li>
+          <li><strong>Color Options:</strong> Black | Brown | Navy</li>
+          <li>Perfect for formal & casual wear</li>
+          <li>Hand-stitched details</li>
+        </ul>
+      </div>
+      <p style="color: #c53030; font-size: 1.2rem; font-weight: 600; margin: 0.5rem 0;">₹2500</p>
+      <button onclick="addToCart('Premium Leather Blazer', 2500)">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? Reach out to our friendly team!</p>
+    <p><strong>Call Us:</strong> <a href="tel:+91-9285247739" class="call-btn">+91-9285247739</a></p>
+    <p><strong>Email:</strong> <a href="mailto:manishsahujiguna@gmail.com">support@kanishqclothing.com</a></p>
+    <p><strong>Address:</strong> SADAR BAZAR, GUNA, M.P., India</p>
+  </section>
+
+  <!-- Floating Cart Button -->
+  <div class="floating-cart" onclick="showCart()">
+    🛒
+    <span class="badge" id="floating-cart-count">0</span>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cart-overlay" class="cart-overlay">
+    <div class="cart-box">
+      <span class="close-btn" onclick="hideCart()">❌</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
+
+      <h3>Shipping Details</h3>
+      <input type="text" id="customer-name" placeholder="Full Name" required>
+      <input type="text" id="customer-address" placeholder="Full Address" required>
+      <input type="email" id="customer-email" placeholder="Email" required>
+      <input type="tel" id="customer-phone" placeholder="Phone Number" required>
+      <button onclick="checkout()">🛒 Buy Now</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Kanishq Clothing. All rights reserved.</p>
+    <div class="social-media">
+      <a href="https://www.instagram.com/manish_sahu2003" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    let cart = [];
+
+    function addToCart(name, price) {
+      const existing = cart.find(item => item.name === name);
+      if (existing) existing.quantity += 1;
+      else cart.push({ name, price, quantity: 1 });
       updateCartCount();
-      alert(`${product.name} added to cart!`);
+      alert(`${name} added to cart!`);
     }
 
     function updateCartCount() {
-      document.getElementById('cart-count').textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+      const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+      document.getElementById('cart-count').innerText = count;
+      document.getElementById('floating-cart-count').innerText = count;
     }
 
     function showCart() {
-      const modal = document.getElementById('cart-modal');
-      const itemsDiv = document.getElementById('cart-items');
-      itemsDiv.innerHTML = '';
-      let total = 0;
+      const container = document.getElementById('cart-items');
+      container.innerHTML = '';
 
-      cart.forEach((item, i) => {
-        total += item.price * item.qty;
-        itemsDiv.innerHTML += `
-          <div class="flex gap-4">
-            <img src="${item.img}" class="w-16 h-16 object-cover rounded-xl">
-            <div class="flex-1">
-              <h4 class="text-base">${item.name}</h4>
-              <p class="text-orange-400 text-sm">₹${item.price} × ${item.qty}</p>
-              <div class="flex gap-3 mt-2">
-                <button onclick="changeQty(${i}, -1)" class="w-8 h-8 bg-zinc-800 rounded-lg text-white">-</button>
-                <span class="py-1 px-3">${item.qty}</span>
-                <button onclick="changeQty(${i}, 1)" class="w-8 h-8 bg-zinc-800 rounded-lg text-white">+</button>
-                <button onclick="removeFromCart(${i})" class="ml-auto text-red-400 text-sm">Remove</button>
-              </div>
+      if (cart.length === 0) {
+        container.innerHTML = '<p style="text-align:center;padding:40px;">Your cart is empty</p>';
+      } else {
+        cart.forEach((item, index) => {
+          const subtotal = item.price * item.quantity;
+          const div = document.createElement('div');
+          div.className = 'cart-item';
+          div.innerHTML = `
+            <div>
+              <strong>${item.name}</strong><br>
+              ₹${item.price} × \( {item.quantity} = ₹ \){subtotal}
             </div>
-          </div>`;
-      });
+            <div class="quantity-controls">
+              <button onclick="changeQuantity(${index}, -1)">–</button>
+              <span style="margin:0 12px;">${item.quantity}</span>
+              <button onclick="changeQuantity(${index}, 1)">+</button>
+            </div>
+            <button class="remove-btn" onclick="removeFromCart(${index})">🗑</button>
+          `;
+          container.appendChild(div);
+        });
+      }
 
-      document.getElementById('cart-total').textContent = `₹${total}`;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+      const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      document.getElementById('cart-total').innerText = total;
+      document.getElementById('cart-overlay').style.display = 'flex';
     }
 
-    function changeQty(i, delta) {
-      cart[i].qty += delta;
-      if (cart[i].qty < 1) cart.splice(i, 1);
-      localStorage.setItem('cart', JSON.stringify(cart));
+    function changeQuantity(index, change) {
+      cart[index].quantity += change;
+      if (cart[index].quantity < 1) cart[index].quantity = 1;
       showCart();
       updateCartCount();
     }
 
-    function removeFromCart(i) {
-      cart.splice(i, 1);
-      localStorage.setItem('cart', JSON.stringify(cart));
-      showCart();
-      updateCartCount();
+    function removeFromCart(index) {
+      if (confirm("Remove this item?")) {
+        cart.splice(index, 1);
+        showCart();
+        updateCartCount();
+      }
     }
 
-    function closeCart() {
-      document.getElementById('cart-modal').classList.add('hidden');
-      document.getElementById('cart-modal').classList.remove('flex');
+    function hideCart() {
+      document.getElementById('cart-overlay').style.display = 'none';
     }
 
     function checkout() {
-      if (cart.length === 0) return alert("Your cart is empty!");
-      alert("Ready for payment! Connect Cashfree or Instamojo.\nTotal: ₹" + cart.reduce((s, i) => s + i.price * i.qty, 0));
+      let total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      if (total === 0) return alert("Your cart is empty!");
+
+      const name = document.getElementById("customer-name").value.trim();
+      const address = document.getElementById("customer-address").value.trim();
+      const email = document.getElementById("customer-email").value.trim();
+      const phone = document.getElementById("customer-phone").value.trim();
+
+      if (!name || !address || !email || !phone) {
+        return alert("Please fill all shipping details.");
+      }
+
+      const options = {
+        "key": "rzp_live_w3b9iK4uDEYuHe",
+        "amount": total * 100,
+        "currency": "INR",
+        "name": "Kanishq Clothing",
+        "description": "Order Payment",
+        "prefill": { "name": name, "email": email, "contact": phone },
+        "notes": { "address": address },
+        "handler": function (response) {
+          alert(`✅ Payment successful!\nPayment ID: ${response.razorpay_payment_id}`);
+          cart = [];
+          updateCartCount();
+          hideCart();
+        },
+        "theme": { "color": "#2b6cb0" }
+      };
+
+      const rzp = new Razorpay(options);
+      rzp.open();
     }
 
-    function filterCategory(cat) {
-      document.querySelectorAll('button[onclick^="filterCategory"]').forEach(b => b.classList.remove('active', 'bg-orange-600'));
-      event.target.classList.add('active', 'bg-orange-600');
-      let filtered = cat === 'all' ? products : products.filter(p => p.category === cat);
-      renderProducts(filtered);
+    function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+    function scrollToProducts() { document.getElementById('products').scrollIntoView({ behavior: 'smooth' }); }
+
+    function prevSlide(btn) {
+      const slider = btn.parentElement;
+      const images = slider.querySelectorAll('img');
+      let active = Array.from(images).findIndex(img => img.classList.contains('active'));
+      images[active].classList.remove('active');
+      active = (active - 1 + images.length) % images.length;
+      images[active].classList.add('active');
     }
 
-    document.getElementById('search').addEventListener('input', e => {
-      const term = e.target.value.toLowerCase();
-      renderProducts(products.filter(p => p.name.toLowerCase().includes(term)));
-    });
-
-    document.getElementById('contact-form').addEventListener('submit', e => {
-      e.preventDefault();
-      alert("Message sent! We'll get back soon.");
-      e.target.reset();
-    });
-
-    function showPolicy(type) {
-      let msg = type === 'privacy' ? "We value your privacy – data used only for orders." :
-                type === 'terms' ? "7-day return for defective items only." : "Refund or replace within 7 days if defective.";
-      alert(msg);
-    }
-
-    window.onload = () => {
-      renderProducts(products);
-      updateCartCount();
-      document.getElementById('cart-btn').addEventListener('click', showCart);
+    function nextSlide(btn) {
+      const slider = btn.parentElement;
+      const images = slider.querySelectorAll('img');
+      let active = Array.from(images).findIndex(img => img.classList.contains('active'));
+      images[active].classList.remove('active');
+      active = (active + 1) % images.length;
+      images[active].classList.add('active');
     }
   </script>
 </body>
